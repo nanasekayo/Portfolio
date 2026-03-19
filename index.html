@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body id="top">
+
+    <a href="#top" class="top-button">↑</a>
+
+    <header>
+        <div class="logo-container">
+        <h1 class="logo">私のポートフォリオ</h1>
+        <p>閲覧いただきありがとうございます。</p></div>
+        <nav>
+            <ul>
+                <li><a class="button" href="#about">自己紹介</a></li>
+                <li><a class="button" href="#skills">スキル</a></li>
+                <li><a class="button" href="#projects">プロジェクト</a></li>
+                <li><a class="button" href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div id="about" class="section">
+        <h2>自己紹介</h2>
+        <p>はじめまして。nanase kayo(ななせ かよ)と申します。<br>
+            金城学院大学の文学部、日本語日本文学科に所属し、日本語の研究をしています。<br>
+            授業でweb制作を少し学び、興味を持ったことから趣味としてweb制作を続けています。<br>
+            また、小さいころから文章を書くことが好きで、noteの投稿もたまにしています。</p></div>
+    </section>
+
+    <section>
+     <div id="skills" class="section">
+        <h2>スキル</h2>
+        <ul>
+            <li>HTML初心者(独学)</li>
+            <li>CSS(独学で勉強中)</li>
+            <li>JavaScript(独学で勉強中)</li>
+        </ul></div>
+    </section>
+
+    <section>
+        <div id="projects" class="section">
+        <h2>プロジェクト</h2>
+        <p>以下は、私がこれまでに取り組んできたプロジェクトです。<br>
+        このポートフォリオを含め、JS以外はすべて自身で作成しています。</p>
+        <div class="project">
+            <h3>卓(部屋)一覧</h3>
+            <p>製作：2か月程度、60時間程度</p>
+            <p>特徴：フィルタ機能</p>
+            <p>説明：TRPGで、プレイを行う画面である「卓(部屋)」を一覧化するためのものです。処女作。</p>
+        </div>
+        <div class="project">
+            <h3>探索者一覧</h3>
+            <p>製作：1か月程度、40時間程度</p>
+            <p>特徴：ソート機能、フィルタ機能</p>
+            <p>説明：同じくTRPGをする際に使用する自身のキャラクターを一覧化するためのものです。</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="contact" class="section">
+        <h2>お問い合わせ</h2>
+        <p>質問等ございましたらこちらからお願いします。</p>
+        <ul>
+            <li>Email:amane.175.game@gmail.com</li>
+            <li>GitHub: <a href="https://github.com/nanasekayo" target="_blank">https://github.com/nanasekayo</a></li>
+            <li>note: <a href="https://note.com/nanase_kayo/" target="_blank">https://note.com/nanase_kayo/</a></li>
+        </ul>
+    </section>
+
+</body>
+
+<footer>
+    <p>&copy; 2026 nanase kayo</p>
+</footer>
+
+<script>
+    // スクロールイベントを監視して、トップに戻るボタンの表示/非表示を切り替える
+    window.addEventListener('scroll', function() {
+        const topButton = document.querySelector('.top-button');
+        if (window.scrollY > 200) { // スクロール位置が200pxを超えたら表示
+            topButton.style.display = 'block';
+        } else {
+            topButton.style.display = 'none';
+        }
+    });
+</script>
+
+</html>
