@@ -65,24 +65,20 @@ a.button {
     margin: 20px 40px;
 }
 
-.project
-{
+.project{
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 47%;
 }
 
 footer{
     margin-left: 20px;
-}
-
-.project{
-    position: relative;
-    overflow: hidden;
-    width: 47%;
 }
 
 .project::before{
@@ -155,6 +151,10 @@ a.blue{
     .top-button{
         font-size: 20px;
         padding: 10px 15px;
+    }
+
+    .project{
+        width: auto;
     }
 
     body {font-size: 14px;}
